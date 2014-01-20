@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="NBA Stars Page">
+	    <meta name="author" content="iphong">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" href="img/logo.png">
+	    <title>NBA Stars</title>
+	    
+	   	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/styles.css">
+
+	</head>	
+	<body> 	
+	
+	<div class="jumbotron" ng-app="myApp">
+
+		<div class="container">
+			<center>
+			<img src="img/logo.png" alt="NBA logo" height="150" width="130"> 
+			<h1>NBA search</h1>
+			</center>
+
+	  		<div ng-controller="SearchCtrl">
+	  			<br>
+	  			<form class="form"> 
+			        <div class="input-append">
+			          <input type="text" ng-model="search.$" class="form-control" placeholer="KeyWord">
+			        </div>
+			        <br>
+		            <table class='table table-striped'>
+		  				<tr>
+							<th>
+								<a href="" ng-click="predicate = 'PlayerName'; reverse=false">Name</a>
+								(<a href="" ng-click="predicate = '-PlayerName'; reverse=false">^</a>)
+							</th>		
+							<th>
+								<a href="" ng-click="predicate = 'GP'; reverse=!reverse">GP</a>
+							</th>
+							<th>
+								<a href="" ng-click="predicate = 'FGP'; reverse=!reverse">FGP</a>
+							</th>
+							<th>
+								<a href="" ng-click="predicate = 'TPP'; reverse=!reverse">TPP</a>
+							</th>
+							<th>
+								<a href="" ng-click="predicate = 'FTP'; reverse=!reverse">FTP</a>
+							</th>
+							<th>
+								<a href="" ng-click="predicate = 'PPG'; reverse=!reverse">PPG</a>
+							</th>
+	                    </tr>
+
+		  				<tr ng-repeat= "player in result | filter:search | orderBy:predicate:reverse">
+		  					<td><a ng-href="https://www.google.com/search?q={{player.PlayerName}}" target="_blank"> {{player.PlayerName}}</a></td>
+		  					<td>{{player.GP}}</td>
+		  					<td>{{player.FGP}}</td>
+		  					<td>{{player.TPP}}</td>
+		  					<td>{{player.FTP}}</td>
+		  					<td>{{player.PPG}}</td>
+		  				</tr>
+  					</table>
+
+			    </form>
+			 </div>
+
+		</div>
+	</div>
+
+   <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+   <script src="http://code.angularjs.org/1.2.9/angular-animate.min.js"></script>
+   <script src="search.js"></script>
+
+	</body>
+</html>
