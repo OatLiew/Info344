@@ -1,0 +1,12 @@
+F:\HW2_cloud\HW2_cloud\bin\Release\ServiceConfiguration.cscfg
+F:\HW2_cloud\HW2_cloud\bin\Release\ServiceDefinition.csdef
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\Microsoft.Data.Edm.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\Microsoft.Data.OData.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\Microsoft.WindowsAzure.Storage.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\System.Spatial.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\bin\WebRole1.dll
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\index.html
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\Web.config
+F:\HW2_cloud\HW2_cloud\obj\Release\WebRole1\WebService1.asmx

@@ -1,0 +1,14 @@
+F:\HW2_cloud\WebRole1\bin\WebRole1.dll.config
+F:\HW2_cloud\WebRole1\bin\WebRole1.dll
+F:\HW2_cloud\WebRole1\bin\WebRole1.pdb
+F:\HW2_cloud\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\HW2_cloud\WebRole1\bin\Microsoft.WindowsAzure.Storage.dll
+F:\HW2_cloud\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+F:\HW2_cloud\WebRole1\bin\Microsoft.Data.OData.dll
+F:\HW2_cloud\WebRole1\bin\Microsoft.Data.Edm.dll
+F:\HW2_cloud\WebRole1\bin\System.Spatial.dll
+F:\HW2_cloud\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\HW2_cloud\WebRole1\bin\Microsoft.WindowsAzure.Storage.xml
+F:\HW2_cloud\WebRole1\obj\Release\WebRole1.dll
+F:\HW2_cloud\WebRole1\obj\Release\WebRole1.pdb
+F:\HW2_cloud\WebRole1\obj\Release\WebRole1.csprojResolveAssemblyReference.cache

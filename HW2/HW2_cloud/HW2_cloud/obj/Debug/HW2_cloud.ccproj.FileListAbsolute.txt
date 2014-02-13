@@ -1,0 +1,2 @@
+F:\HW2_cloud\HW2_cloud\bin\Debug\ServiceConfiguration.cscfg
+F:\HW2_cloud\HW2_cloud\bin\Debug\ServiceDefinition.csdef
