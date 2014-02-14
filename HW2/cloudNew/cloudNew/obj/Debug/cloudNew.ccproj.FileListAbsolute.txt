@@ -1,0 +1,2 @@
+F:\cloudNew\cloudNew\bin\Debug\ServiceConfiguration.cscfg
+F:\cloudNew\cloudNew\bin\Debug\ServiceDefinition.csdef
