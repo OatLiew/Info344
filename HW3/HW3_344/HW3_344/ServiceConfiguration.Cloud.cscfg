@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="HW3_344" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=table344;AccountKey=DopfJuQaMt1b0g8SjK4nGfOMcsFbCykKOhtG4UJ+UBYz+VpNmdq2PgYlcwRH4ePfsCmtdrSC1arPxOzkLJnoWA==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=table344;AccountKey=DopfJuQaMt1b0g8SjK4nGfOMcsFbCykKOhtG4UJ+UBYz+VpNmdq2PgYlcwRH4ePfsCmtdrSC1arPxOzkLJnoWA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

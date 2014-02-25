@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DashBoard</title>
+</head>
+<body>
+
+    <h1>State of each worker role web crawler</h1> (loading, crawling, idle)
+    <h1>Machine counters</h1>               (CPU Utilization%, RAM available)
+    <h1>#URLs crawled </h1>
+    <h1>Last 10 URLs crawled </h1>
+    <h1>Size of queue </h1>(#urls left in pipeline to be crawled) 
+    <h1>Size of index (Table storage with our crawled data) </h1>
+    <h1> Any errors and their URLs </h1>
+
+    <p>
+    Clear everything (index/table, queue/pipeline, stop all worker roles)
+    Start crawling (give a root URL, ex: www.cnn.com, and kick off worker roles)
+    Retrieve data from index (get page title for specific URL)
+    </p>
+    start crawling: <input type="text" id="fname">
+    <button onclick="makeAjaxRequest()">Click me</button>
+    <div id="result"> </div>
+
+    <script language="javascript">
+        function makeAjaxRequest() {
+            var n = $("#fname").val();
+            $.ajax({
+                type: "POST",
+                url: "WebService1.asmx/crawURL",
+                data: "{Input:'a'}",
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                success: function (serverResponse) {
+                    //var obj = (JSON.stringify(serverResponse));
+                    alert("call");
+
+                    $.each(serverResponse, function (key, value) {
+                        $('#result').html(value);
+                    });
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    if (xhr.status == 404) {
+                        alert('Not found error occurred');
+                    } else if (xhr.status == 500) {
+                        alert('A server error occurred');
+                    } else {
+                        alert('Sorry an error occurred');
+                    }
+                }
+            });
+     }
+    </script>
+
+</body>
+</html>

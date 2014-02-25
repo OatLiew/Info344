@@ -1,0 +1,2 @@
+F:\HW3_344\HW3_344\bin\Debug\ServiceConfiguration.cscfg
+F:\HW3_344\HW3_344\bin\Debug\ServiceDefinition.csdef

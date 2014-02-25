@@ -1,0 +1,13 @@
+Write-Up for project3 
+Web crawler
+Oat Liewsrisuk
+The web crawler project is implemented through the use of Queue storage, Azure table storage (no sql), web form (aspx) and the concept of web role and woker role. The crawler will target the cnn.com webite and crawls though thier links, title and last date modified and store them information in No sql database. 
+When any command is pressed, the command string is being passed to the command queue which is then used to communicate with the worker role. Loading state is when the crawler is loading the html from the sitemaps.
+When the start Button is pressed, the crawler will go to cnn sitemap and get all the links a href tag by using html agility pack with X-path of a tag and use regex to compare and filter out the cnn.com site. Also,  it can't be in the disallowed website in the robot.txt. All the html page will pass through the queue for the worker role to process.
+When the Stop Button is pressed, everything is cleared including the index, queues and the table. it might be slight delay for the stop to take effect. 
+The update info button is used to update all the labels on the interface. Inside the worker role there is an infinite loop with a sleep of 500 ms for every cycle. 
+The worker role will check for the command queue first. If the command is start, it will get url sitemap and start adding all the htmls into the queue. Stop command will clear everthing. Crawling will crawl through all the html links and filter out the wanted links and remove all the duplicate and the disallowed one. The filter is used thorugh the regex and html agility pack to get to the tag.
+The recent urls and of Urls crawled are built by using queues. The two queues will contain each elements which can be peeked by the webrole.
+
+
+
